@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 
 from PIL import Image
 
-profile_pic =Image.open("/Portfolio/assets/prt.jpg")
+profile_pic =Image.open("/assets/prt.jpg")
 
 st.set_page_config(page_title="Praneeth Profile Page", page_icon=profile_pic,layout="wide")
 
