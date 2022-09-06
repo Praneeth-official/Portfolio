@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 
 from PIL import Image
 
-profile_pic =Image.open("assets/prt.jpg")
+profile_pic =Image.open("Portfolio/assets/prt.jpg")
 
 st.set_page_config(page_title="Praneeth Profile Page", page_icon=profile_pic,layout="wide")
 
@@ -144,7 +144,7 @@ with st.container():
         with open(file_name) as f:
             st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=
             True)
-    local_css("style/button.css")
+    local_css("Portfolio/style/button.css")
 
    
        
@@ -171,4 +171,4 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=
         True)
-local_css("style/style.css")
+local_css("Portfolio/style/style.css")
