@@ -1,5 +1,5 @@
 
-import os
+
 import streamlit as st
 import json
 import requests
@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 
 from PIL import Image
 
-profile_pic =Image.open(os.path.join("/assets/prt.jpg"))
+profile_pic =Image.open("assets/prt.jpg")
 
 st.set_page_config(page_title="Praneeth Profile Page", page_icon=profile_pic,layout="wide")
 
@@ -19,7 +19,7 @@ st.balloons()
 def load_lottiefile(filepath:str):
     with open(filepath,"r") as f:
         return json.load(f)
-lottie_coding = load_lottiefile("lottiefiles/coding.json")
+lottie_coding = load_lottiefile("Portfolio/lottiefiles/coding.json")
 
 
         
@@ -71,7 +71,7 @@ with st.container():
         def load_lottiefile(filepath:str):
             with open(filepath,"r") as f:
                 return json.load(f)
-        lottie_hello = load_lottiefile("lottiefiles/hello.json")
+        lottie_hello = load_lottiefile("Portfolio/lottiefiles/hello.json")
 
     #     def load_lottieurl(url:str):
     #         r = requests.get(url)
