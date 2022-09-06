@@ -1,5 +1,5 @@
 
-
+import os
 import streamlit as st
 import json
 import requests
@@ -7,7 +7,7 @@ from streamlit_lottie import st_lottie
 
 from PIL import Image
 
-profile_pic =Image.open("/assets/prt.jpg")
+profile_pic =Image.open(os.path.join("/assets/prt.jpg"))
 
 st.set_page_config(page_title="Praneeth Profile Page", page_icon=profile_pic,layout="wide")
 
