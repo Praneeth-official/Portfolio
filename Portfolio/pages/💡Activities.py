@@ -9,7 +9,7 @@ st.title("Our Latest Work :sunglasses:")
 def load_lottiefile(filepath:str):
   with open(filepath,"r") as f:
     return json.load(f)
-lottie_active = load_lottiefile("lottiefiles/active.json")
+lottie_active = load_lottiefile("Portfolio/lottiefiles/active.json")
 st_lottie(
             lottie_active,
             speed = 1,
@@ -54,4 +54,4 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>",unsafe_allow_html=
         True)
-local_css("style/special.css") 
+local_css("Portfolio/style/special.css") 
